@@ -1,8 +1,14 @@
 <?php
-$num = 56;
+function babochka($number) {
+    $str = (string)$number;
+    $reversed = strrev($str);
+    return $str === $reversed;
+}
 
-if ((string)$num === strrev((string)$num)) {
-    echo "$num — приснилась бабочка";
+$number = 12321;
+
+if (babochka($number)) {
+    echo "$number — приснилась бабочка.";
 } else {
-    echo "$num — не снилась бабочка";
+    echo "$number — не приснилась бабочка.";
 }
