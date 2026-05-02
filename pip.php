@@ -5,7 +5,7 @@ function babochka($number) {
     return $str === $reversed;
 }
 
-$number = 12321;
+float $number = 12321;
 
 if (babochka($number)) {
     echo "$number — приснилась бабочка.";
